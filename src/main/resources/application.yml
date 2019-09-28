@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: springboot-security
+  security:
+    user:
+      name: admin
+      password: admin
+server:
+  port: 8002
