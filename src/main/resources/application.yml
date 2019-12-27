@@ -1,9 +1,21 @@
 spring:
   application:
     name: springboot-security
+  datasource:
+    url: jdbc:mysql://49.232.173.109:3306/pig_config?useSSL=false&useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: wangqiang
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
   security:
-    user:
-      name: admin
-      password: admin
+    enable: true
 server:
   port: 8002
+
+jacken:
+  security:
+    ignore:
+      urls: /auth/login
+
+
